@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>primeira aula de todas</title>
+    </head>
+    <body>
+        <!----CODIGO HTML----->
+        <input type="text" id="informacao">
+        <input type="text" id="2">
+        <input type="text" id="3">
+        <button onclick="exibeInformacaoDigitada()">Clica aqui querido</button>
+        <!----JAVASCRIPT----->
+        <script>
+            function exibeInformacaoDigitada()
+            {
+                var info = document.getElementById("informacao").value;
+                var sim = document.getElementById("2").value;
+                var nao = document.getElementById("3").value;
+                var exibeInformações = info+ " "+ sim+ " " + nao;
+                alert(exibeInformações);
+            }
+        </script>
+    </body>
+</html>    
+   
