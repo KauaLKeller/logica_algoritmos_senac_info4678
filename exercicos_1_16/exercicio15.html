@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15</title>
+</head>
+<body>
+    
+</body>
+</html>
+    <input type="number" id="trabalhados" input placeholder="diasTrabalhados">
+    <button onclick="exibeinformacaodigitada()">dias</button>
+
+<script>
+    function exibeinformacaodigitada(){
+        var diasTrabalhados = Number(document.getElementById("trabalhados").value);
+    var salario = 8 * 25.00;
+    var total = salario * diasTrabalhados; 
+        var boasVindas = "Seu salário é " + total;
+        alert(boasVindas);
+    }
+</script>

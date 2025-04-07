@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<body>
+    <Input type = "number" id= "numeros">
+        <Input type = "number" id= "paraiba">
+        <button onclick="exibeInformacaoDigitada()">numeros</button>
+        <script>
+            function exibeInformacaoDigitada(){
+                var info = Number(document.getElementById("numeros").value);
+                var informacao = Number(document.getElementById("paraiba").value);
+                var soma = info + informacao;
+                var boasVindas = "A soma entre " + info + " e " + informacao + " é igual a " + soma;
+                alert(boasVindas);
+            }
+    </script>
+</body>
+</html>

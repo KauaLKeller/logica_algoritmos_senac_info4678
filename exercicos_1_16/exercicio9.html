@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9</title>
+</head>
+<body>
+    <input type="number" id="dinheiro" input>
+    <button onclick="exibeInformacaoDigitada()">salário</button>
+<script>
+    function exibeInformacaoDigitada(){
+    var info = Number(document.getElementById("dinheiro").value);
+    var EUA = (info/5.76)
+var boasVindas = "Você tem " + info + "R$ em sua carteira. A conversão desse dinheiro em dólar dará " + EUA + "$"      
+      alert(boasVindas);
+
+}
+</script>
+</body>
+</html>

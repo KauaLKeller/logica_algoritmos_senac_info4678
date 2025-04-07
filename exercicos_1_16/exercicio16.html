@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16</title>
+</head>
+<body>
+    <input type="number" id="diasFumados" input>
+    cigarros por dia
+    <input type="number" id="anosFumados" input>
+    anos fumando
+<button onclick="exibeinformacaodigitada()">vida perdida</button>
+<script>
+ function exibeinformacaodigitada(){
+    var cigarroPorDia = Number(document.getElementById("diasFumados").value);
+    var anos = Number(document.getElementById("anosFumados").value);
+    var fds = anos*365;
+    var cigarro = cigarroPorDia * fds;
+    var doz = cigarro *10;
+    var final = doz / 1440;
+        var boasVindas = "Você perdeu " + final.toFixed(2) + " dias por conta do cigarro"
+alert(boasVindas);
+
+ }
+
+</script>
+</body>
+</html>

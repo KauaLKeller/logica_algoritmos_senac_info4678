@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+<body>
+<input type="number" id="nota1">
+<input type="number" id="nota2">
+
+<button onclick="exibeInformacaoDigitada()">numeros</button>
+<script>
+    function exibeInformacaoDigitada(){
+        var info = Number(document.getElementById("nota1").value);
+        var informacao = Number(document.getElementById("nota2").value);
+        var soma = info + informacao;
+        var média = soma /2;
+        var boasVindas = "A média entre " + informacao + " e " + info + " é igual a " + média;
+        alert(boasVindas);
+    }
+</script>
+
+</body>
+</html>

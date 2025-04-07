@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7</title>
+</head>
+<body>
+    <input type="number" id="numero1" input>
+    <button onclick="exibeInformacaoDigitada()">aperta</button>
+<script>
+    function exibeInformacaoDigitada(){
+    var info = Number(document.getElementById("numero1").value);
+    var divisão = (info/3);
+    var multiplicado = (info*2);
+    var boasVindas = "O dobro de " + info + " é " + multiplicado + ", e o seu terço é " + divisão;
+    alert(boasVindas);
+}
+</script>
+</body>
+</html>

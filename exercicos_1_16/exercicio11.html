@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11</title>
+</head>
+<body>
+    <input type="number" id="a">
+    <input type="number" id="b">
+    <input type="number" id="c">
+<button onclick="exibeInformacaoDigitada()">A, B, C</button>
+<script>
+    function exibeInformacaoDigitada(){
+    var c = Number(document.getElementById("c").value);
+    var a = Number(document.getElementById("a").value);
+    var b = Number(document.getElementById("b").value);
+    var info = (b*b-4*a*c);
+    var boasVindas = "O valor de delta equivale a " + info
+alert(boasVindas);
+
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+b2 - 4*ac

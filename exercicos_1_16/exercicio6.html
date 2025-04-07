@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+</head>
+<body>
+    <input type="number" id="numero1" input>
+
+<button onclick="exibeInformacaoDigitada()">clica aqui lindo</button>
+<script>
+    function exibeInformacaoDigitada(){
+        var info = Number(document.getElementById("numero1").value);
+        var antecessor = (info-1);
+        var sucessor = (info+1);
+        var boasVindas = "os números antecessor e sucessor de " + info + " são " + antecessor + " e " + sucessor;
+alert(boasVindas);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+<body>
+   
+    <Input type = "text" id= "idade">
+    
+        <button onclick="exibeInformacaoDigitada()">digite seu nome</button>
+        <script>
+            function exibeInformacaoDigitada()
+            {
+                var info = document.getElementById("idade").value;
+                var boasVindas = "o funcionário " + info + " tem um salário de R$1850,45 em Junho.";
+                alert(boasVindas);
+            } 
+        </script>
+</body>
+</html>

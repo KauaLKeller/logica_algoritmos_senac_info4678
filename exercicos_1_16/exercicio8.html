@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8</title>
+</head>
+<body>
+    <input type="number" id="metros" input>
+    <button onclick="ExibeInformacaoDigitada()">Aperta aqui</button>
+<script>
+        function ExibeInformacaoDigitada(){
+    var info = Number(document.getElementById("metros").value);    
+    var Km = (info/1000);
+    var Cm = (info*100);
+    var Dam = (info/10);
+    var Milha = (info*0.000621);
+    var boasVindas = "A distância de " + info + " metros " + " corresponde a: " + Cm + "Cm " + Km + "Km, " + Dam + "Dam e " + Milha + "Milhas ";
+    alert(boasVindas);
+}
+</script>
+</body>
+</html>

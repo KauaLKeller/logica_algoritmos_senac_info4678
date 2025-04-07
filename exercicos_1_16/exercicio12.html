@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12</title>
+</head>
+<body>
+    <input type="number" id="promoção" input>
+
+<button onclick="exibeinformacaodigitada()">promoção</button>
+    <script>
+         function exibeinformacaodigitada(){
+        var precoDoProduto = Number(document.getElementById("promoção").value);
+        var desconto = (precoDoProduto*0.05);
+        var precoComDesconto = (precoDoProduto-desconto);
+        
+        var boasVindas = "Seu produto passará a custar " + precoComDesconto
+alert(boasVindas);
+         }
+    </script>
+</body>
+</html>
+

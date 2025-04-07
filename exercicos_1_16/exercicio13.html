@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13</title>
+</head>
+<body>
+    <input type="number" id="salario" input>
+
+    <button onclick="exibeinformacaodigitada()">aumento</button>
+<script>
+             function exibeinformacaodigitada(){
+    var salario = Number(document.getElementById("salario").value);
+    var porcentagem = (salario*0.15);
+    var conta = (salario+porcentagem)
+    var boasVindas = "Seu novo salário será de " + conta;
+alert(boasVindas);
+
+}
+</script>
+</body>
+</html>

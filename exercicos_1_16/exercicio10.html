@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10</title>
+</head>
+<body>
+    <input type="number" id="largura" input>
+    <input type="number" id="altura" input>
+
+
+    <button onclick="exibeInformacaoDigitada()">largura e altura</button>
+    <script>
+        function exibeInformacaoDigitada(){
+            var altura = Number(document.getElementById("altura").value);
+            var largura = Number(document.getElementById("largura").value);
+            var total = (altura*largura);
+            var tudo = (total/2);
+            var tinta 
+           var boasVindas = "Uma parede com " + altura + " de altura e " + largura + " de largura terá a área de " + total + " e usará " + tudo + " litros de tinta"
+            alert(boasVindas);
+        }
+</script>
+</body>
+</html>
