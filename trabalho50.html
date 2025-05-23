@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50</title>
+</head>
+<body>
+    <script>
+        window.onload = function(){
+    var Divisivel3 = 0;
+    var tudo = ""
+var Numer5 = 0;
+for (var i = 0; i < 20; i++){
+    var valorAleatorio = Math.floor(Math.random() * 10);
+        tudo = tudo + " " + valorAleatorio; 
+    if(valorAleatorio >5)
+{
+    Numer5 ++
+}
+if(valorAleatorio%3 ===0){
+Divisivel3 ++
+}
+        }
+console.log("Os número são " + tudo + ", existem "+ Numer5 + " Numeros maiores que 5, e " + Divisivel3 + " divisiveis por 3")
+    }
+</script>
+</body>
+</html>

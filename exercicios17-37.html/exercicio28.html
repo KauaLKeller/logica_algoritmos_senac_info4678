@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28</title>
+</head>
+<body>
+    <input type="number" id="largura" value="">
+    <input type="number" id="comprimento" value="">
+    <button onclick="ExibeInfo()">tamanho em m2</button>
+<script>
+    function ExibeInfo(){
+var largura = parseFloat(document.getElementById("largura").value);
+var comprimento = parseFloat(document.getElementById("comprimento").value);
+var tamanho = largura * comprimento;
+            if (tamanho < 100){
+                alert("Terreno Popular");
+            }   else if(tamanho >= 100 && tamanho < 500 ){
+                alert("Terreno Master");
+            }       else if(tamanho >= 500){
+                alert ("Terreno Vip");
+            }
+
+    }
+
+</script>
+
+</body>
+</html>

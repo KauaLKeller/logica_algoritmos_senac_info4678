@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32</title>
+</head>
+<body>
+    <input type="number" id="numero" value="">
+<button onclick="ExibeInfo()">aleatorizar</button>
+<script>
+function ExibeInfo(){
+    var numero = document.getElementById("numero").value;
+    var valorAleatorio = Math.floor(Math.random() * 6);
+if(valorAleatorio == numero)
+{
+        alert("Você acertou!")
+    }else if(valorAleatorio != numero){
+            alert("Você errou")
+        }
+
+}
+    
+
+</script>
+</body>
+</html>

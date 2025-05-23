@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>34</title>
+</head>
+<body>
+    <input type="number" placeholder="peso" id="peso" value="">
+    <input type="number" placeholder="altura" id="altura" value="">
+    <button onclick="ExibeInfo()">IMC</button>
+    <script>
+    function ExibeInfo(){
+var IMCpeso = document.getElementById("peso").value;
+var IMCaltura = document.getElementById("altura").value;
+var tudo = (IMCaltura*IMCaltura) + IMCpeso;
+if(tudo < 18.5 && tudo < 25){
+    alert("Magrinho do krl")
+    }else if(tudo >= 25 && tudo < 30)
+    {
+        alert("normal")
+    }
+    else if(tudo >= 30 && tudo <=40)
+    {
+        alert("Sobrepeso")
+    }
+    else if(tudo >= 30 && tudo < 40)
+        {alert("obeso")
+        }
+    else if(tudo >= 40){
+        alert("Muito gordo")
+    }
+}
+
+</script>
+</body>
+</html>

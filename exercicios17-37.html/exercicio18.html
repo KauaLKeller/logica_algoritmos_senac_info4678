@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18</title>
+</head>
+<body>
+<input type="number" id="nascimento" value="";>
+<button onclick="tudo()">Clica</button>
+<script>
+    function tudo(){
+        var AnoNascido = document.getElementById("nascimento").value
+        var ano = 2025 - AnoNascido
+    if( ano > 18){
+alert("Você tem o direito ao voto, e tem " + ano + " de idade")
+}else{
+alert("Não pode votar, hein ")
+}
+}
+</script>
+</body>
+</html>

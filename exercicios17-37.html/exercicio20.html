@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20</title>
+</head>
+<body>
+    <input type="number" id="numeroFinal" value="">
+        <button onclick="ExibeInfo()">Par ou ímpar</button>
+    <script>
+function ExibeInfo(){
+var number = document.getElementById("numeroFinal").value
+var resultado = Number(number) % 2;
+if (resultado == 0){
+    alert("O número " + number + " é par");
+}else{
+    alert("O número " + number + " é ímpar");
+}
+
+}
+
+
+    </script>
+
+</body>
+</html>

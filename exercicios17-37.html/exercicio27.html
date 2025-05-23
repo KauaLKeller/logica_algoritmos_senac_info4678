@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27</title>
+</head>
+<body>
+    
+    <input type="number" id="nota1" value="">
+    <input type="number" id="nota2" value="">
+    <button onclick="ExibeInfo()">média</button>
+<script>
+      function ExibeInfo(){
+
+        //or = ||
+        //and = &&
+        var nota =  parseFloat(document.getElementById("nota1").value);
+        var nota2 =  parseFloat(document.getElementById("nota2").value);
+        var media = (nota + nota2)/2;
+        
+        if(media >= 7){
+            alert("Você passou de ano!");
+        }else if(media < 7 && media >= 5){
+            alert("Tá de recuperação");
+        }else if(media <5 ){
+            alert("repetiu de ano, tanso");
+        }
+      }
+
+
+</script>
+</body>
+</html>

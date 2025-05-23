@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33</title>
+</head>
+<body>
+    <input type="number" placeholder="Salario" id="salario" value="">
+    <input type="number" placeholder="ValorDaCasa" id="valorCasa" value="">
+    <input type="number" placeholder="AnosTrabalhando" id="Anos" value="">
+<button onclick="ExibeInfo()">É aceito?</button>
+<script>
+function ExibeInfo(){
+var salario = document.getElementById("salario").value;
+var ValorDaCasa = document.getElementById("valorCasa").value;
+var Anos = document.getElementById("Anos").value;
+var anoecasa = ValorDaCasa / (Anos * 12);
+if(
+anoecasa > (salario*30)/100
+){
+alert("pobre")
+}else(
+    alert("Você poderá fazer a compra!")
+)
+}
+</script>
+</body>
+</html>

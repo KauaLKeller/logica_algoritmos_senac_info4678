@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>44 e 45</title>
+</head>
+<body>
+    <script>
+        window.onload = function(){
+            var valorInicial = Number(prompt("primeiroNumero"));
+            var valorfinal= Number(prompt("NumeroFinal"));
+            var Valormeio = Number(prompt("incremento"));
+            var resultado = "";
+
+            if (valorInicial > valorfinal){
+                for(var i = valorInicial; i >= valorfinal; i -=Valormeio){
+                    resultado = resultado + " " + i;
+                }
+            }else{
+                        for(var i = valorInicial; i <= valorfinal; i +=Valormeio){
+                resultado = resultado + " " + i;
+                        }
+            }
+            alert(resultado);
+        }
+</script>
+</body>
+</html>

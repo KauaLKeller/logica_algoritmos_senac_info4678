@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21</title>
+</head>
+<body>
+    <input type="number" id="ano" value="">
+    <button onclick="ExibeInfo()">bissexto?</button>
+    <script>
+        function ExibeInfo(){
+            var ano = Number(document.getElementById("ano").value);
+            if(ano % 4 == 0)
+            {
+                if(ano % 100 == 0)
+                {
+                    if(ano % 400 == 0)
+                    {
+                        alert("Seu ano é bissexto");
+                    }else{  alert("Seu ano não é bissexto");}
+                }else{
+                    alert("Seu ano é bissexto");
+                }
+            }
+            else{
+                alert("Seu ano não é bissexto");
+            };
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

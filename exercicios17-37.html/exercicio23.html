@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nome" value="">
+    <input type="text" id="gender" value="">
+    <input type="number" id="valorCompra" value="">
+    <button onclick="ExibeInfo()">Verificar Desconto</button>
+    <script>
+        function ExibeInfo()
+        {
+            var nome = document.getElementById("nome").value;
+            var gender = document.getElementById("gender").value;
+            var valorDaCompra = parseFloat(document.getElementById("valorCompra").value);
+                if(gender == "M"){
+                    alert(nome + ", o valor de seu produto será de " + valorDaCompra * 0.95 + "R$");
+                }else if(gender == "F"){
+                    alert(nome + ", o valor de sua compra será de " + valorDaCompra * 0.87 + "R$");
+                }
+
+
+        }
+    </script>
+</body>

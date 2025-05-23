@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>37</title>
+</head>
+<body>
+    <input type="number" placeholder="Anos Trabalhando" id="AnosEmpresa" value="">
+    <input type="number" placeholder="Salario" id="Salario" value="">
+<button onclick="ExibeMulher()">Mulheres</button>
+<button onclick="ExibeHomem()">Homens</button>
+<script>
+
+function ExibeHomem(){    
+    var Anos = document.getElementById("AnosEmpresa").value;
+    var Salario = document.getElementById("Salario").value;
+    if(Anos < 20 ){alert(Salario * 1.03 )}
+    else if(Anos >= 20 && Anos <= 30)
+    {
+    alert(Salario * 1.13);
+    }else if(Anos > 40){
+        alert(Salario * 1.25)
+    }
+}
+function ExibeMulher(){
+    var Anos = document.getElementById("AnosEmpresa").value;
+    var Salario = document.getElementById("Salario").value;   
+    if(Anos < 15 ){alert(Salario * 1.05 )}
+    else if(Anos >= 15 && Anos <= 20)
+    {
+    alert(Salario * 1.12);
+    }else if(Anos > 20){
+        alert(Salario * 1.23)
+    }
+
+
+
+
+}
+
+</script>
+
+</body>
+</html>

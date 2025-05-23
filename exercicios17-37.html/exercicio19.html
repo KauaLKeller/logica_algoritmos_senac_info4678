@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19</title>
+</head>
+<body>
+<input type="text" id="nome" value="">
+<input  type="number" id="nota1" value="">
+<input  type="number" id="nota2" value="">
+<button onclick="ExibeInfo()">sua média</button>
+    <script>
+function ExibeInfo(){
+var name = document.getElementById("nome").value;
+var not1 = Number(document.getElementById("nota1").value);
+var not2 = Number(document.getElementById("nota2").value);
+var média = (not1 + not2) / 2
+if (média > 7){
+alert("olá " + name + " Sua média de nota é " + média);
+}else{
+alert("Você tirou " + média + " e reprovou");
+}
+
+}
+
+    </script>
+</body>
+</html>

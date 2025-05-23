@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26</title>
+</head>
+<body>
+    <input type="number" id="Number1" value="">
+    <input type="number" id="Number2" value="">
+    <button onclick="ExibeInfo()">Maior ou menor</button>
+    <script>
+        function ExibeInfo(){
+var numero1 = parseFloat(document.getElementById("Number1").value);
+var numero2 = parseFloat(document.getElementById("Number2").value);
+if (numero1 > numero2){
+    alert("O primeiro valor é maior")
+}
+        if (numero1 < numero2){
+    alert("O segundo valor é maior")}
+
+    if (numero1 == numero2){
+alert("Não existe valor maior, os dois são iguais")
+    }
+} 
+</script>
+</body>
+</html>

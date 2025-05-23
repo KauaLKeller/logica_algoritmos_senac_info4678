@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31</title>
+</head>
+<body>
+    <input type="text" id="Jogador1" value="">
+    <input type="text" id="Jogador2" value="">
+    <button onclick="ExibeInfo()">jogar</button>
+<script>
+
+    function ExibeInfo(){   
+        var P1 = document.getElementById("Jogador1").value
+        var P2 = document.getElementById("Jogador2").value
+
+
+//Tesoura ganha de papel
+//Pedra ganha de tesoura
+//Papel ganha de pedra
+if(P1 == "papel" && P2 == "tesoura"){
+    alert("Jogador 2 venceu");
+}
+    else if(P1 == "papel" && P2 == "pedra"){
+    alert("Jogador 1 venceu")
+    }
+    else if(
+        P1 == "pedra" && P2 == "tesoura"
+    ){
+        alert("Jogador 1 venceu");
+    }
+    else if(
+        P1 == "pedra" && P2 == "papel"
+    ){
+        alert("Jogador 2 venceu");
+    }
+    else if(
+        P1 == "tesoura" && P2 == "pedra"
+    ){
+        alert("jogador 2 venceu");
+    }
+    else if(
+            P1 == "tesoura" && P2 == "papel"
+        ){
+            alert("jogador 1 venceu")
+        }
+    else if(
+            P1 = P2
+        ){
+            alert("empate");
+        }
+}
+</script>
+</body>
+</html>

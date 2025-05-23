@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>35</title>
+</head>
+<body>
+    <input type="text" placeholder="Tipo de carro" id="TipoCarro" value="">
+    <input type="number"placeholder="Quilometros" id="Kms" value="">
+    <input type="number" placeholder="Dias" id="dias" value="">
+<button onclick="ExibeInfo()">Total</button>
+<script>
+function ExibeInfo(){
+var Tipo = document.getElementById("TipoCarro").value;
+var Km = document.getElementById("Kms").value;
+var dias = document.getElementById("dias").value;
+var Menos100 = Km <= 100;
+var mais100 = Km > 100;
+if(Tipo == "luxo" && mais100){
+    alert((Km * 0.10) + (150 * dias));
+}
+        else if(Tipo == "luxo" && Menos100){
+    alert((Km * 0.20) + (150 * dias));
+}
+        else if(Tipo == "popular" && Menos100){
+    alert((Km * 0.20) + (90 * dias));
+}
+        else if(Tipo == "popular" && mais100){
+    alert((Km * 0.10) + (90 * dias))
+}
+
+}
+
+</script>
+
+
+</body>
+</html>

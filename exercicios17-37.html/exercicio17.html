@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17</title>
+</head>
+<body>
+<input type="number" id="VelocidadeDoCarro" value="";>
+<button onclick="verificarvelocidade()">Clica</button>
+<script>
+    function verificarvelocidade(){
+        var VelocidadeDoCarro = Number(document.getElementById("VelocidadeDoCarro").value);
+        if(VelocidadeDoCarro > 80){
+            var VelocidadeAcimadonormal = VelocidadeDoCarro - 80;
+            var ValorDaMulta = VelocidadeAcimadonormal * 5;
+            alert("Você perdeu " +ValorDaMulta + " em dinheiro");
+            alert("Você não se ferrou. Parabéns!");   
+        }else{
+        "Se ferrou, otario "
+        }
+    }
+</script>
+</body>
+</html>

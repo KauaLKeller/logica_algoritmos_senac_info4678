@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22</title>
+</head>
+<body>
+<input type="number" id="nasceu" value="">
+    <button onclick="ExibeInfo()">Ano nascimento</button>
+<script>
+function ExibeInfo(){
+    var anos = document.getElementById("nasceu").value;
+    var a = 2025 - anos;
+    var necessário = 18;
+    var um = necessário - a;
+    if(a < 18){
+        alert("Ainda faltam " + um + " anos para o seu alistamento");
+    }else{
+        alert("voce já pode se alistar!");
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24</title>
+</head>
+<body>
+    <input type="number" id="DistanciaDesejada" value="">
+<button onclick="ExibeInfo()">Preço</button>
+<script>
+    function ExibeInfo(){
+     var DistanciaDesejada = parseFloat(document.getElementById("DistanciaDesejada").value);
+     var resultado = DistanciaDesejada * 0.45;
+     var resultado2 = DistanciaDesejada * 0.5;
+    if(DistanciaDesejada > 200)
+    {
+        alert("O preço de sua passagem será de " + resultado + "R$");
+    }
+    else
+    {
+        alert("O preço de sua passagem será de " + resultado2 + "R$");
+    }
+}
+</script>
+</body>
+</html>

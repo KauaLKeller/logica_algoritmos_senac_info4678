@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Number" id="marca" value="">opa</button>
+    <script>
+      let numeros = [];
+let pares = 0;
+let impares = 0;
+
+// Simulando a entrada de 6 números usando prompt
+for (let i = 0; i < 6; i++) {
+  let numero = parseInt(prompt(`Digite o ${i + 1}º número inteiro:`), 10);
+
+  // Verifica se é um número válido
+  if (isNaN(numero)) {
+    alert("Por favor, digite um número inteiro válido.");
+    i--; // repete a iteração
+    continue;
+  }
+
+  numeros.push(numero);
+
+  // Verifica se é par ou ímpar
+  if (numero % 2 === 0) {
+    pares++;
+  } else {
+    impares++;
+  }
+}
+
+// Exibe os resultados
+alert(`Você digitou ${pares} número(s) par(es) e ${impares} número(s) ímpar(es).`);
+    </script>
+</body>
+</html>
