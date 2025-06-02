@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>78</title>
+</head>
+<body>
+    <script>
+window.onload = function(){
+    var Arrei= [];
+    var Arrei1= []
+    for(var i = 0; i < 15; i++)
+    {
+        var NumeroDigitado = Number(prompt("numeros"));
+        var multiplo = (NumeroDigitado%10 ===0);
+        Arrei[i] = NumeroDigitado
+        if(multiplo){
+            Arrei1.push(i)
+        }
+
+    }
+    console.log(Arrei)
+    console.log(Arrei1)
+}
+
+
+    </script>
+</body>
+</html>

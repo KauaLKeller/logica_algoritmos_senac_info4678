@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>75</title>
+</head>
+<body>
+    <script>
+window.onload = function(){
+var Arrei = [];
+for(var i= 0; i < 15; i++){
+    if(i<2){
+        Arrei[i]=1
+    }else if(i>=2){
+        Arrei[i]= Arrei[i-1] + Arrei[i-2];
+    }
+}
+
+
+
+console.log(Arrei)
+}
+    </script>
+</body>
+</html>
